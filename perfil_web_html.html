@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="perfil_web_css.css">
+</head>
+
+<body>
+    <header>
+        <label>Profile</label>
+        <ul>
+            <li>Home</li>
+            <li class="profile">Mi profile</li>
+            <li>Find Connections</li>
+            <li><input id="boton" type="button" value="sign out"></li>
+        </ul>
+    </header>
+
+    <div id="container">
+        <div class="columna_uno">
+            <div class="block">
+                <div class="block_dos">
+                    <img id="imagen_uno" src="imagen.png">
+                </div>
+                <h1 id="jane">JANE DOE</h1>
+                <div class="clase">
+                    <img id="imagen_dos" src="logo_ubicacion.png">
+                    <h2>Seattle</h2>
+                </div>
+                <p class="par">Developer| Engineer|Problem Solver<br> Master of Shadows And The internet.</p>
+                <div class="clase">
+                    <img id="imagen_tres" src="gear.png">
+                    <a href="#" onclick="cambiar_nombre(jane)"> edit profile</a>
+                </div>
+            </div>
+            <div class="con_borde">
+                <h1 class="nombre"> Education</h1>
+                <p id="par_uno"> Coding Dojo - Full Stack Bootcamp</p>
+                <p id="par_dos"> Dec 2019- Mar 2020</p>
+                <p id="par_tres"> Triple black belt in Python,MERM, and C#_</p>
+            </div>
+        </div>
+        <div class="conect">
+            <div>
+                <p id="connection"><span id="conectados">2</span> Connection Request</p>
+            </div>
+            <div id="todd" class="conectados_dos">
+                <img src="todd-s.jpg" alt="logo_perfil">
+                <label>Todd E</label>
+                <button  class="ticket"><img src="accept-circle.png" alt="ticket"></button>
+                <button onclick="desaparecer(todd)"><img src="close-circle.png" alt="cruz"></button>
+            </div>
+            <div id="phil" class="conectados_dos">
+                <img src="phil-s.jpg" alt="logo_perfil">
+                <label>PHIL K</label>
+                <button class="ticket"><img src="accept-circle.png" alt="ticket"></button>
+                <button onclick="desaparecer(phil)"><img src="close-circle.png" alt="cruz"></button>
+            </div>
+            <div class="tu">
+                <p class="your"> <span id=yours>500+</span>Yours Connections</p>
+                <div class="tufila">
+                    <img src="adrien-s.jpg" alt="logo_perfil">
+                    <p class="you">Adrien D</p>
+                </div>
+                <div class="tufila">
+                    <img src="anne-s.jpg" alt="c:\Users\Amparo\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmllogo_perfil">
+                    <p class="you">Anne J</p>
+                </div>
+                <div class="tufila">
+                    <img src="alayne-s.jpg" alt="logo_perfil">
+                    <p class="you">Alayne T</p>
+                </div>
+                <div class="tufila">
+                    <img src="arry-s.jpg" alt="logo_perfil">
+                    <p class="you" alt="logo_perfil">Arry Y</p>
+                </div>
+                <div id="view">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="profile.js"></script>
+
+</html>
