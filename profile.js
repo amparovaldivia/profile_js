@@ -1,7 +1,7 @@
 function cambiar_nombre(elemento){
-    elemento.innerHTML="Amparo valdivia";
+    document.getElementById(elemento).innerHTML="Amparo valdivia";
 }
 
 function desaparecer(elemento){
-    elemento.style.display="none";
+    document.getElementById(elemento).style.display="none";
 }
